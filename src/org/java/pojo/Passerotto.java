@@ -1,12 +1,20 @@
 package org.java.pojo;
 
 import org.java.pojo.abs.Animale;
+import org.java.pojo.inter.IVolante;
 
-public class Passerotto extends Animale {
+public class Passerotto extends Animale implements IVolante {
 
 	public Passerotto(String name) {
 		
 		super(name);
+		
+	}
+	
+	@Override
+	public void vola() {
+		
+		System.out.println("sono " + getName() + " e Sto volando!!!");
 		
 	}
 
